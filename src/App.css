@@ -1,0 +1,44 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+  * {
+    color: #0200F1;
+    background: #eee;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+    background: #eee;
+  }
+
+  /* Normalizing CSS */
+  .navbar-nav .nav-link {
+    display: inline-block;
+  }
+
+  .dropdown-item:hover {
+    background-color: transparent;
+    display: inline-block;
+  }
+
+  .navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  ul.navbar-nav.mx-auto.mb-2.mb-lg-0 {
+    margin: 0;
+  }
+
+  .baguetteBox-button svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #444;
+  }
+
+  /* End of Normalizing CSS */
