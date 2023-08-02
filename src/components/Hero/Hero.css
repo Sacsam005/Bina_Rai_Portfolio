@@ -1,0 +1,343 @@
+/* Onload floating box */
+.floating-panel-container-onload {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 2%;
+  bottom: 0;
+  border: 2px solid #e77200;
+  transform: scale(0);
+  transition: transform 0.4s ease-in-out;
+  z-index: 1000;
+  width: 55%;
+  overflow-y: auto;
+  margin: 0 auto;
+  background: #1488cc;
+  background: -webkit-linear-gradient(to bottom, #2b32b2, #1488cc);
+  background: linear-gradient(to bottom, #2b32b2, #1488cc);
+}
+
+.floating-panel-container-onload.visible {
+  transform: scale(0.5);
+}
+
+.floating-panel-container-onload.visible {
+  transform: scale(1);
+}
+
+.floating-panel-container-onload .close-btn-onload {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 1px;
+  padding: 0.5rem;
+  border: none;
+}
+
+.fa-times:before {
+  color: #f22302;
+}
+
+.floating-panel-container-onload .close-btn-onload:focus {
+  outline: none;
+}
+
+.floating-panel-container-onload p {
+  font-weight: 600;
+  text-align: center;
+  max-width: 80%;
+  margin: 0.25rem auto;
+  color: #eee;
+}
+
+.floating-panel-container-onload button {
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.floating-panel-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.floating-panel-container-onload img {
+  width: 100%;
+  height: auto;
+  margin-top: 0.25rem;
+}
+
+.floating-panel-container-onload ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0.5rem 0;
+  background: transparent;
+}
+
+.floating-panel-container-onload ul li {
+  margin: 0 10px;
+  background: transparent;
+}
+
+.floating-panel-container-onload ul li a {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #001f61;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+}
+
+.floating-panel-container-onload ul li a:hover {
+  border-color: #ff6a00;
+  box-shadow: 0 9px 12px -9px #ff6a00;
+}
+
+.all-button {
+  padding: 0.75rem 1rem;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  opacity: 1;
+  border: none;
+}
+
+.all-button:hover {
+  color: #222;
+  text-decoration: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.all-button:focus {
+  outline: none;
+}
+
+.fa-arrow-right {
+  color: #0200f1;
+}
+
+.form-inline {
+  margin: 0 0.25rem;
+  padding: 0.12rem 0;
+  line-height: 1.5;
+}
+
+.input-group > .input-group-prepend > .input-group-text,
+input#email {
+  border-radius: 0;
+}
+
+form input.form-control {
+  border-radius: 10px;
+  border: none;
+}
+
+.form-control:focus {
+  border-color: none !important;
+  box-shadow: none !important;
+}
+
+form input::placeholder {
+  color: #9b9990 !important;
+  opacity: 0.5 !important;
+}
+
+/* End of Onload floating box */
+
+/* Fixed social icons*/
+#fixed-social-icons {
+  position: fixed;
+  top: 250px;
+  z-index: 100;
+  box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px -5px,
+    rgb(0 0 0 / 4%) 0px 10px 10px -5px;
+  background: #fff;
+}
+
+#fixed-social-icons a {
+  display: block;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  line-height: 40px;
+  width: 40px;
+  margin-bottom: 1px;
+}
+
+#fixed-social-icons a:hover > span {
+  visibility: visible;
+  left: 41px;
+  opacity: 1;
+}
+
+#fixed-social-icons a span {
+  border: 1px solid#0200F1;
+  left: 60px;
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  visibility: hidden;
+  transition-duration: 0.5s;
+  z-index: 1;
+  opacity: 0;
+}
+
+/*End of Fixed social icons*/
+
+/* Hero section */
+.hero-section {
+  padding: 1rem;
+}
+
+.hero-section-wrapper {
+  display: flex;
+}
+
+.hero-wrapper-left,
+.hero-wrapper-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-wrapper-left h1 {
+  text-align: left;
+  font-weight: 900;
+  font-size: 6vw;
+  background: -webkit-linear-gradient(
+    270deg,
+    #0000f1b3,
+    #3433f3,
+    #1b19f2,
+    #0200f1
+  );
+  -webkit-text-stroke: 1px transparent;
+  letter-spacing: 2px !important;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* End of Hero section */
+
+/* Media queries */
+@media screen and (max-width: 1024px) {
+  .floating-panel-container-onload {
+    width: 55%;
+    height: 97%;
+  }
+
+  .hero-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-wrapper-right {
+    order: 2;
+  }
+
+  .hero-wrapper-left {
+    order: 1;
+  }
+
+  .hero-wrapper-left h1 {
+    -webkit-text-stroke: 1px transparent;
+    letter-spacing: 1px;
+    font-size: 5vw;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .floating-panel-container-onload {
+    width: 95%;
+    height: 97%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .floating-panel-container-onload {
+    top: 2%;
+    width: 90%;
+  }
+
+  .floating-panel-button-container {
+    flex-direction: column;
+  }
+
+  .form-inline {
+    margin-top: 0.2rem;
+  }
+
+  .floating-panel-container-onload ul li a {
+    font-size: 1rem;
+    height: 25px;
+    width: 25px;
+  }
+
+  .hero-section {
+    max-width: 100%;
+  }
+
+  .hero-wrapper-right,
+  .hero-wrapper-left {
+    padding: 0 0.5rem;
+  }
+
+  .hero-wrapper-left h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .floating-panel-container-onload {
+    width: 85%;
+  }
+
+  .hero-wrapper-left h1 {
+    -webkit-text-stroke: 1px transparent;
+    font-size: 8vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .floating-panel-container-onload {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .hero-section,
+  .card-section,
+  .experience-section {
+    max-width: 1500px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .floating-panel-container-onload {
+    width: 45%;
+  }
+
+  .hero-wrapper-left h1 {
+    font-size: 5rem;
+  }
+}
+
+/* End of Media queries for Hero section*/
