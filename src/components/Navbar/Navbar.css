@@ -1,0 +1,82 @@
+.navbar {
+  padding: 0;
+  box-shadow: -1px 9px 18px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* Generalizing navbar ul li @utilities.scss */
+.mx-auto {
+  margin-right: 0 !important;
+  margin-left: auto !important;
+}
+
+.nav-item {
+  margin: 0 0.75rem;
+}
+
+a.nav-link,
+.footer-links a {
+  color: #0200f1;
+  padding: 0;
+  margin: 0.5rem 0;
+  background-image: linear-gradient(90deg, #5b4af7, #6659d8);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 0% 1px;
+  transition: background-size 300ms ease;
+}
+
+a.nav-link:hover,
+.footer-links a:hover {
+  color: inherit;
+  background-size: 100% 2px;
+  cursor: pointer;
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Scroll to Top */
+#scroll-top-button {
+  display: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  z-index: 99;
+  color: #0200f1;
+  cursor: pointer;
+  padding: 0.5rem;
+  box-shadow: rgba(25, 4, 255, 0.75) 0px 13px 27px -5px,
+    rgba(25, 4, 255, 0.75) 0px 8px 16px -8px;
+  border: none !important;
+}
+
+#scroll-top-button:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border: none !important;
+}
+
+/* End of Scroll to Top */
+
+/* Media Queries for Navbar */
+@media screen and (max-width: 680px) {
+  .mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .navbar {
+    max-width: 1344px;
+    margin: 0 auto;
+  }
+}
+
+/* End of Media Queries for Navbar */
