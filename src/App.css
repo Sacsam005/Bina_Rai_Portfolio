@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;900&display=swap");
+
+* {
+  color: #0200f1;
+  font-family: "Work Sans", sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Normalizing CSS */
+.navbar-nav .nav-link {
+  display: inline-block;
+}
+
+.dropdown-item:hover {
+  background-color: transparent;
+  display: inline-block;
+}
+
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+ul.navbar-nav.mx-auto.mb-2.mb-lg-0 {
+  margin: 0;
+}
+
+/* End of Normalizing CSS */
+
+.default_padding_top {
+  padding-top: 3rem;
+}
+
+.standard_text {
+  font-size: 18px;
+}
+
+.small_text {
+  font-size: 20px;
+}
+
+.medium_text {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.large_text {
+  font-size: 28px;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: 700;
+  background: -webkit-linear-gradient(
+    270deg,
+    #0000f1b3,
+    #1b19f2,
+    #062db8,
+    #0200f1,
+    #0575e6
+  );
+  -webkit-text-stroke: 1px transparent;
+  letter-spacing: 1px !important;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1024px) {
+  .shadowed_text {
+    font-size: 4rem;
+    font-weight: 900 !important;
+    color: #0000ff !important;
+    letter-spacing: 1px;
+    text-shadow: -6px -6px #ffd700, -5px -5px #ffd700, -4px -4px #ffd700,
+      -3px -3px #ffd700, -2px -2px #ffd700, -1px -1px #ffd700, 1px 1px #ffd700,
+      2px 2px #ffd700, 3px 3px #ffd700, 4px 4px #ffd700, 5px 5px #ffd700,
+      6px 6px #ffd700, 7px 7px #ffd700, 8px 8px #ffd700, 9px 9px #ffd700,
+      10px 10px #ffd700, 11px 11px #ffd700, 12px 12px #ffd700, 13px 13px #ffd700,
+      14px 14px #ffd700, 15px 15px #ffd700;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .shadowed_text {
+    font-size: 3rem;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  overflow-y: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: none;
+}
+
+@media screen and (min-width: 1100px) {
+  .hero-section,
+  .card-section,
+  .experience-section,
+  .certifications-section,
+  .organizations_section,
+  .footer-section {
+    max-width: 1500px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
