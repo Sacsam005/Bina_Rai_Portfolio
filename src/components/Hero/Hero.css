@@ -1,0 +1,147 @@
+/* Fixed social icons*/
+#fixed-social-icons {
+  position: fixed;
+  top: 250px;
+  z-index: 100;
+  box-shadow: rgb(0, 2, 241) 0px 0px 0px 2px;
+  background: #efefef;
+}
+
+#fixed-social-icons a {
+  display: block;
+  height: 40px;
+  position: relative;
+  text-align: center;
+  line-height: 40px;
+  width: 40px;
+  margin-bottom: 1px;
+}
+
+#fixed-social-icons a:hover > span {
+  visibility: visible;
+  left: 41px;
+  opacity: 1;
+}
+
+#fixed-social-icons a span {
+  background: #efefef;
+  border: 1px solid#0200F1;
+  left: 60px;
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  visibility: hidden;
+  transition-duration: 0.5s;
+  z-index: 1;
+  opacity: 0;
+}
+
+/*End of Fixed social icons*/
+
+/* Hero section */
+.hero-section {
+  padding: 4rem 1rem 1rem 1rem;
+  background: #e2e2e2;
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.hero-section-wrapper {
+  display: flex;
+}
+
+.hero-wrapper-left,
+.hero-wrapper-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-wrapper-left h1 {
+  text-align: left;
+  font-weight: 900;
+  font-size: 6vw;
+  background: -webkit-linear-gradient(
+    270deg,
+    #0000f1b3,
+    #3433f3,
+    #1b19f2,
+    #0200f1
+  );
+  -webkit-text-stroke: 1px transparent;
+  letter-spacing: 2px !important;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* End of Hero section */
+
+/* Media queries */
+@media screen and (max-width: 1024px) {
+  .hero-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-wrapper-right {
+    order: 2;
+  }
+
+  .hero-wrapper-left {
+    order: 1;
+  }
+
+  .hero-wrapper-left h1 {
+    -webkit-text-stroke: 1px transparent;
+    letter-spacing: 1px;
+    font-size: 5vw;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .form-inline {
+    margin-top: 0.2rem;
+  }
+
+  .floating-panel-container-onload ul li a {
+    font-size: 1rem;
+    height: 25px;
+    width: 25px;
+  }
+
+  .hero-section {
+    max-width: 100%;
+  }
+
+  .hero-wrapper-right,
+  .hero-wrapper-left {
+    padding: 0 0.5rem;
+  }
+
+  .hero-wrapper-left h1 {
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .hero-wrapper-left h1 {
+    -webkit-text-stroke: 1px transparent;
+    font-size: 8vw;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .hero-wrapper-left h1 {
+    font-size: 5rem;
+  }
+}
+
+/* End of Media queries for Hero section*/
