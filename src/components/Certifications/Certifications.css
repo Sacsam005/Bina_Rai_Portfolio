@@ -1,0 +1,88 @@
+a,
+p,
+li {
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+/* Certifications section */
+.gallery {
+  max-width: 1344px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+}
+
+.gallery img {
+  max-width: 200px;
+  height: 75%;
+  cursor: pointer;
+  scroll-snap-align: center;
+}
+
+/* End of Certifications section */
+
+.gradient__card_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gradient_card {
+  position: relative;
+  transition: all ease 0.5s;
+}
+
+.gradient_card span {
+  background: transparent;
+  text-decoration: none;
+}
+
+.gradient_card_content {
+  width: 100%;
+  max-width: 380px;
+  padding: 2rem 1rem 1rem 1rem;
+  background: -webkit-linear-gradient(to right, #2f80ed, #56ccf2);
+  background: linear-gradient(to right, #2f80ed, #56ccf2);
+}
+
+.gradient_card:hover {
+  box-shadow: none;
+}
+
+.gradient_card a {
+  color: #eee;
+  text-decoration: none;
+  background: transparent;
+}
+
+.gradient_card a span {
+  text-decoration: underline;
+}
+
+.dot {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  border-radius: 50%;
+  top: 1%;
+  left: 8%;
+}
+
+.dot:nth-child(1) {
+  background-color: #ff605c;
+  margin: 0.75rem 0.75rem;
+}
+
+.dot:nth-child(2) {
+  background-color: #ffbd44;
+  margin: 0.75rem 2.3rem;
+}
+
+.dot:nth-child(3) {
+  background-color: #00ca4e;
+  margin: 0.75rem -0.75rem;
+}

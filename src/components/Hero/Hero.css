@@ -1,0 +1,104 @@
+/* Fixed social icons*/
+#fixed_social_icons_container {
+  position: fixed;
+  top: 250px;
+  left: 0;
+  z-index: 100;
+  border: 2px solid #2909d9;
+  background: #fff;
+}
+
+#fixed_social_icons_container a {
+  color: #2909d9 !important;
+  text-align: center;
+  line-height: 40px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin-bottom: 1px;
+}
+
+#fixed_social_icons_container a:hover > span {
+  visibility: visible;
+  left: 41px;
+  opacity: 1;
+}
+
+#fixed_social_icons_container a span {
+  width: 100px;
+  left: 60px;
+  position: absolute;
+  background: #e2e2e2;
+  text-align: center;
+  border: 1.5px solid #2909d9;
+  visibility: hidden;
+  transition-duration: 0.5s;
+  z-index: 1;
+  opacity: 0;
+}
+
+/*End of Fixed social icons*/
+
+/* Hero section */
+.hero_section {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  text-align: right;
+  min-height: 55px;
+}
+
+.hero_section h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  background: -webkit-linear-gradient(
+    270deg,
+    #2220f1b3,
+    #1b19f2,
+    #062db8,
+    #0200f1,
+    #0575e6
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero_section img {
+  position: absolute;
+  top: -1%;
+  left: -5.5%;
+  object-fit: contain;
+  background: #2909d9;
+}
+
+/* End of Hero section
+
+/* Media queries */
+@media screen and (max-width: 1024px) {
+  .hero_section h1 {
+    font-size: 3rem !important;
+    -webkit-text-stroke: 1px transparent;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .floating-panel-container-onload ul li a {
+    font-size: 1rem;
+    height: 25px;
+    width: 25px;
+  }
+
+  .hero__section_wrapper {
+    max-width: 100%;
+  }
+
+  .hero_section h1 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+  }
+}
+
+/* End of Media queries for Hero section*/

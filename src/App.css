@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;900&display=swap");
+
+* {
+  font-family: "Work Sans", sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* General css classes */
+h2 {
+  font-weight: 700;
+}
+
+.small_text {
+  font-size: 20px;
+}
+
+.neo_brutalism_shadow {
+  border: 2px solid #2909d9;
+  box-shadow: 5px 5px #2909d9;
+}
+/* End of General css classes */
+
+@media screen and (min-width: 1280px) {
+  body {
+    max-width: 1500px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 5rem !important;
+  }
+}
